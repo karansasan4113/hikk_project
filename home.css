@@ -142,7 +142,8 @@
 .home-main-img img {
     width: 100%;
 }
-/* home main background image     END*/ 
+
+/* home main background image     END*/
 /*home page products display*/
 .home-page-products-container {
 
@@ -186,6 +187,7 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
+
 /*home page products display            END */
 /*home page collections-monthly*/
 .home-page-collections {
@@ -204,14 +206,14 @@
 }
 
 #home-page-collection-view {
-position: relative;
-   height: 30px;
-   width: 110px;
-   padding-top:10px;
-   padding-left: 60px;
-   padding-bottom: 10px;
-  border: #fffdfd solid 2px;
-  border-radius: 10px;
+    position: relative;
+    height: 30px;
+    width: 110px;
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    border: #fffdfd solid 2px;
+    border-radius: 10px;
 }
 
 .home-page-collections img {
@@ -219,24 +221,24 @@ position: relative;
     width: 100%;
 
 }
+
 /*home page collections-monthly     END */
-.home-page-fotter-container{
+.home-page-fotter-container {
     height: 700px;
     background-color: rgb(0, 0, 0);
-    display:flex;
-  margin-top: 100px;
- 
-    
+    display: flex;
+    margin-top: 100px;
+
+
 }
-#home-page-fotter-items{
-color: #ffffff;
-font-family:Arial, Helvetica, sans-serif;
-font-size: 20px;
 
-width: 25%;
-
-padding-top: 80px;
-padding-left: 120px;
-padding-bottom: 40px;
+#home-page-fotter-items {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 25%;
+    padding-top: 80px;
+    padding-left: 120px;
+    padding-bottom: 40px;
 
 }
