@@ -4,6 +4,10 @@
     position: fixed;
 }
 
+body {
+    background-color: rgb(237, 237, 237);
+}
+
 /*nav box 1 */
 .nav-box1 {
     display: flex;
@@ -13,7 +17,7 @@
 
 #menu-bar {
     font-family: 'Verdana', sans-serif;
-    color: #fffdfd;
+    color: #000000;
     /* White text color for menu bar */
     padding: 10px;
     margin: 20px;
@@ -31,7 +35,7 @@
     /* Adjust the icon width */
     height: 24px;
     /* Adjust the icon height */
-    fill: #ffffff;
+    fill: #000000;
     /* Set the icon color */
     margin-right: 10px;
     /* Add some spacing between icon and text */
@@ -44,7 +48,7 @@
     /* Adjust the icon width */
     height: 24px;
     /* Adjust the icon height */
-    fill: #ffffff;
+    fill: #000000;
     /* Set the icon color */
     margin-right: 10px;
     /* Add some spacing between icon and text */
@@ -55,17 +59,17 @@
 
 #search-lens {
     margin: 20px;
-    color: #ffffff;
+    color: #000000;
     /* White text color for menu bar */
     padding: 10px;
     display: flex;
+    text-decoration: none;
     /* Use flexbox to align items */
     justify-content: space-between;
     /* Space elements evenly */
     align-items: center;
     /* Center items vertically */
     font-family: 'Verdana', sans-serif;
-    text-decoration: none;
 }
 
 /* nav box2 */
@@ -93,7 +97,7 @@
     /* Adjust the font size */
     font-weight: bold;
     /* Make the text bold */
-    color: #ffffff;
+    color: #000000;
     /* Set the text color to black */
     font-family: 'Arial', sans-serif;
 }
@@ -114,7 +118,7 @@
     align-items: center;
     /* Center items vertically */
     margin: 20px;
-    color: #ffffff;
+    color: #000000;
     /* White text color for menu bar */
     padding: 10px;
     display: flex;
@@ -129,7 +133,7 @@
     align-items: center;
     /* Center items vertically */
     margin: 20px;
-    color: #ffffff;
+    color: #000000;
     /* White text color for menu bar */
     padding: 10px;
     display: flex;
@@ -139,134 +143,73 @@
     font-family: 'Verdana', sans-serif;
     text-decoration: none;
 }
-
-/* navigation bar               END  */
-
-/* home main background image*/
-.home-main-img img {
-    width: 100%;
-}
-
-/* home main background image     END*/
-/*home page products display*/
-.home-page-products-container {
-
+/* navigation end here */
+/* genral conatct */
+.genral-contact {
     display: flex;
-    padding: 20px;
-    margin-bottom: 80px;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-left: 400px;
+    padding-right: 300px;
+}
 
+#contact-method {
+    font-weight: bold;
 
 }
 
-#home-page-products img {
-    height: 90%;
+#contact {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* contact us form */
+
+.page-width {
+    max-width: 900px;
+    /* Set the maximum width of the form container */
+    margin: 0 auto;
+    /* Center the form horizontally */
+}
+
+.field {
+    margin-bottom: 20px;
+    /* Add some spacing between fields */
+}
+
+.field__input {
     width: 100%;
+    /* Make the input fields fill the container */
+    padding: 10px;
+    /* Add padding for better spacing */
+    border: 1px solid #ccc;
+    /* Add a border for a cleaner look */
 }
 
-#home-page-products {
-    padding: 20px;
-
-}
-
-#home-page-products li {
-    list-style: none;
-    padding-top: 20px;
-
-}
-
-#home-product-name {
-    font-size: 20px;
-    font-family: sans-serif;
-    color: black;
-
-}
-
-#home-page-products a {
-    text-decoration: none;
-
-}
-
-#home-product-selection {
-    color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-}
-
-/*home page products display            END */
-/*home page collections-monthly*/
-.home-page-collections {
-    position: relative;
-}
-
-.home-page-collections a {
-    position: absolute;
-    font-size: 20px;
-    color: #fffdfd;
-    text-decoration: none;
-    top: 75%;
-    left: 45%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-#home-page-collection-view {
-    position: relative;
-    height: 30px;
-    width: 110px;
-    padding-top: 10px;
-    padding-left: 60px;
-    padding-bottom: 10px;
-    border: #fffdfd solid 2px;
-    border-radius: 10px;
-}
-
-.home-page-collections img {
-
-    width: 100%;
-
-}
-
-/*home page collections-monthly     END */
-.home-page-fotter-container1 {
-    height: 700px;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    margin-top: 100px;
-    padding: 50px;
-
-    width: 100%;
-}
-
-/* home page footer */
-#home-page-fotter-items1 a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 15px;
-    width: 100%;
-    margin: 30px;
-    padding: 8px;
+.field__label {
     display: block;
-    /* border: #fffdfd solid 2px; */
+    /* Ensure labels are on a new line */
+    margin-bottom: 5px;
+    /* Add spacing below labels */
 }
 
-#home-page-fotter-items2 a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 15px;
-    width: 100%;
-    margin: 30px;
-    padding: 8px;
-    margin-left: 290px;
-    display: block;
-    /* border: #fffdfd solid 2px; */
+.text-area {
+    resize: vertical;
+    /* Allow vertical resizing for textarea */
 }
 
-#home-page-fotter-items3 {
-    color: #ffffff;
-    font-size: 15px;
-    /* border: #fffdfd solid 2px; */
-    display: block;
-    width: 100%;
-    margin-left: 70px;
-    padding: 40px;
+.contact__button {
+    text-align: center;
+    /* Center the submit button */
+}
+
+.button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
 }
