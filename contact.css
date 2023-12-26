@@ -213,3 +213,6 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+.field__input:focus {
+    outline: none; /* Remove the default focus outline */
+}
