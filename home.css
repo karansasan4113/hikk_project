@@ -94,10 +94,13 @@
     font-weight: bold;
     /* Make the text bold */
     color: #ffffff;
+
     /* Set the text color to black */
     font-family: 'Arial', sans-serif;
 }
-
+a{
+    text-decoration: none;
+}
 /* nav box3 */
 .nav-box3 {
     display: flex;

@@ -98,12 +98,9 @@ body {
     font-weight: bold;
     /* Make the text bold */
     color: #000000;
-
+    text-decoration: none;
     /* Set the text color to black */
     font-family: 'Arial', sans-serif;
-}
-a{
-    text-decoration: none;
 }
 
 /* nav box3 */
@@ -148,80 +145,16 @@ a{
     text-decoration: none;
 }
 /* navigation end here */
-/* genral conatct */
-.genral-contact {
-    display: flex;
-    flex-direction: column;
+/* about us  */
+#about-us {
     padding-top: 200px;
-    padding-left: 400px;
-    padding-right: 300px;
- color: #000000;
+    padding-left: 60px;
 }
 
-#contact-method {
-    font-weight: bold;
-
-}
-p{
+p {
     color: rgb(57, 57, 57);
 }
-#contact {
-    padding-top: 10px;
-    padding-bottom: 10px;
 
+h2 {
+    color: rgb(117, 116, 116);
 }
-
-/* contact us form */
-
-.page-width {
-    max-width: 900px;
-    /* Set the maximum width of the form container */
-    margin: 0 auto;
-    /* Center the form horizontally */
-}
-
-.field {
-    margin-bottom: 20px;
-    /* Add some spacing between fields */
-}
-
-.field__input {
-    width: 100%;
-    /* Make the input fields fill the container */
-    padding: 10px;
-    /* Add padding for better spacing */
-    border: 1px solid #ccc;
-    /* Add a border for a cleaner look */
-}
-
-.field__label {
-    display: block;
-    /* Ensure labels are on a new line */
-    margin-bottom: 5px;
-    /* Add spacing below labels */
-}
-
-.text-area {
-    resize: vertical;
-    /* Allow vertical resizing for textarea */
-}
-
-.contact__button {
-    text-align: center;
-    /* Center the submit button */
-}
-
-.button {
-    background-color: #000000;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    width: 200px;
-    height: 50px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.field__input:focus {
-    outline: none; /* Remove the default focus outline */
-}
-
