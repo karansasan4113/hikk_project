@@ -144,21 +144,67 @@ body {
     font-family: 'Verdana', sans-serif;
     text-decoration: none;
 }
+
 /* navigation end here */
-/* about us  */
-#about-us {
-    padding-top: 200px;
+
+/* favourite clothes start here*/
+.favourite-heading {
+    padding-top: 100px;
     padding-left: 60px;
-    padding-bottom: 100px;
 }
 
-p {
-    color: rgb(57, 57, 57);
+/*favourite page products display*/
+.home-page-products-container {
+
+    display: flex;
+    padding: 20px;
+    margin-bottom: 80px;
+
+
 }
 
-h2 {
-    color: rgb(117, 116, 116);
+#home-page-products img {
+    height: 90%;
+    width: 100%;
 }
+
+#home-page-products {
+    padding: 20px;
+
+}
+
+#home-page-products li {
+    list-style: none;
+    padding-top: 20px;
+
+}
+
+#home-product-name {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: black;
+    display: flex;
+
+}
+
+#home-page-products a {
+    text-decoration: none;
+
+}
+
+#home-product-selection {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+/*favourite icon heart*/
+
+#favourite-icon {
+    padding-left: 290px;
+}
+
+/*favourite products display            END */
 
 /*  footer */
 .home-page-fotter-container1 {
