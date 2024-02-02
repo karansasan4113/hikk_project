@@ -33,6 +33,9 @@ function changeStylesheet(href) {
     linkElement.setAttribute('href', href);
 }
 
+
+
+
 // Example: Change to an alternative stylesheet after 300 pixels of scrolling
 document.addEventListener('scroll', function () {
     if (window.scrollY > 100) {
