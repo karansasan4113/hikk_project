@@ -1,153 +1,8 @@
-/* navigation bar start */
-.navigation {
-    display: flex;
-    position: fixed;
-}
-
-/*nav box 1 */
-.nav-box1 {
-    display: flex;
-
-    margin-right: 330px;
-}
-
-#menu-bar {
-    font-family: 'Verdana', sans-serif;
-    color: #fffdfd;
-    /* White text color for menu bar */
-    padding: 10px;
-    margin: 20px;
-    display: flex;
-    text-decoration: none;
-    /* Use flexbox to align items */
-    justify-content: space-between;
-    /* Space elements evenly */
-    align-items: center;
-    /* Center items vertically */
-}
-
-#menu-bar svg {
-    width: 24px;
-    /* Adjust the icon width */
-    height: 24px;
-    /* Adjust the icon height */
-    fill: #ffffff;
-    /* Set the icon color */
-    margin-right: 10px;
-    /* Add some spacing between icon and text */
-    vertical-align: middle;
-    /* Align the icon vertically */
-}
-
-#search-lens svg {
-    width: 24px;
-    /* Adjust the icon width */
-    height: 24px;
-    /* Adjust the icon height */
-    fill: #ffffff;
-    /* Set the icon color */
-    margin-right: 10px;
-    /* Add some spacing between icon and text */
-    vertical-align: middle;
-    /* Align the icon vertically */
-
-}
-
-#search-lens {
-    margin: 20px;
-    color: #ffffff;
-    /* White text color for menu bar */
-    padding: 10px;
-    display: flex;
-    /* Use flexbox to align items */
-    justify-content: space-between;
-    /* Space elements evenly */
-    align-items: center;
-    /* Center items vertically */
-    font-family: 'Verdana', sans-serif;
-    text-decoration: none;
-}
-
-/* nav box2 */
-.nav-box2 {
-    flex: 1;
-    /* Allow box2 to grow and take up available space */
-    text-align: center;
-    /* Center the content in box2 */
-
-    margin-right: 290px;
-}
-
-#brand-name {
-    align-items: center;
-    /* Center items vertically */
-    margin: 20px;
-    /* White text color for menu bar */
-    padding: 10px;
-    padding-left: 0px;
-    display: flex;
-    /* Use flexbox to align items */
-    justify-content: space-between;
-    /* Space elements evenly */
-    font-size: 44px;
-    /* Adjust the font size */
-    font-weight: bold;
-    /* Make the text bold */
-    color: #ffffff;
-
-    /* Set the text color to black */
-    font-family: 'Arial', sans-serif;
-}
-a{
-    text-decoration: none;
-}
-/* nav box3 */
-.nav-box3 {
-    display: flex;
-    justify-content: flex-end;
-    /* Align box3 to the right */
-    gap: 10px;
-    /* Add gap between box3 elements */
-
-    margin-left: 50px;
-
-}
-
-#call-us {
-    align-items: center;
-    /* Center items vertically */
-    margin: 20px;
-    color: #ffffff;
-    /* White text color for menu bar */
-    padding: 10px;
-    display: flex;
-    /* Use flexbox to align items */
-    justify-content: space-between;
-    /* Space elements evenly */
-    font-family: 'Verdana', sans-serif;
-    text-decoration: none;
-}
-
-#wishlist {
-    align-items: center;
-    /* Center items vertically */
-    margin: 20px;
-    color: #ffffff;
-    /* White text color for menu bar */
-    padding: 10px;
-    display: flex;
-    /* Use flexbox to align items */
-    justify-content: space-between;
-    /* Space elements evenly */
-    font-family: 'Verdana', sans-serif;
-    text-decoration: none;
-}
-
-/* navigation bar               END  */
 
 /* home main background image*/
 .home-main-img img {
     width: 100%;
+
 }
 
 /* home main background image     END*/
@@ -231,13 +86,16 @@ a{
 
 /*home page collections-monthly     END */
 .home-page-fotter-container1 {
-    height: 700px;
+    height: 500px;
     background-color: rgb(0, 0, 0);
     display: flex;
     margin-top: 100px;
     padding: 50px;
-
-    width: 100%;
+bottom: 0;
+    width: 1330px;
+  
+    left: 0;
+    right: 0;
 }
 
 /* home page footer */
@@ -273,3 +131,4 @@ a{
     margin-left: 70px;
     padding: 40px;
 }
+

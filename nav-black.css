@@ -1,0 +1,233 @@
+
+/* navigation bar start */
+
+.navigation {
+    display: flex;
+    position: fixed;
+    background: transparent !important;
+    /* background-color: white; */
+    backdrop-filter: blur(100px);
+    transition: 0.3s ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: background-color 0.2s ease-in-out;
+  z-index: 9;
+
+}
+
+.navigation.hidden {
+    transform: translateY(-100%);
+}
+/*nav box 1 */
+.nav-box1 {
+    display: flex;
+
+    margin-right: 330px;
+}
+
+#menu-bar {
+    font-family: 'Verdana', sans-serif;
+    /* color: #000000; */
+   
+    /* White text color for menu bar */
+    
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    text-decoration: none;
+    /* Use flexbox to align items */
+    justify-content: space-between;
+    /* Space elements evenly */
+    align-items: center;
+    /* Center items vertically */
+    cursor: pointer;
+}
+
+#menu-bar svg {
+    width: 24px;
+    /* Adjust the icon width */
+    height: 24px;
+    /* Adjust the icon height */
+    fill: #000000;
+    /* Set the icon color */
+    margin-right: 10px;
+    /* Add some spacing between icon and text */
+    vertical-align: middle;
+    /* Align the icon vertically */
+} 
+
+#menu-bar svg path {
+    stroke: rgb(0, 0, 0); /* Change the stroke color to black */
+}
+#search-lens svg path{
+    stroke: rgb(0, 0, 0); /* Change the stroke color to black */
+}
+#search-lens svg {
+    width: 24px;
+    /* Adjust the icon width */
+    height: 24px;
+    /* Adjust the icon height */
+    fill: #000000;
+    /* Set the icon color */
+    margin-right: 10px;
+    /* Add some spacing between icon and text */
+    vertical-align: middle;
+    /* Align the icon vertically */
+
+}
+
+#search-lens {
+    margin: 20px;
+    color: #000000;
+    /* White text color for menu bar */
+    padding: 10px;
+    display: flex;
+    /* Use flexbox to align items */
+    justify-content: space-between;
+    /* Space elements evenly */
+    align-items: center;
+    /* Center items vertically */
+    font-family: 'Verdana', sans-serif;
+    text-decoration: none;
+}
+
+/* nav box2 */
+.nav-box2 {
+    flex: 1;
+    /* Allow box2 to grow and take up available space */
+    text-align: center;
+    /* Center the content in box2 */
+
+    margin-right: 290px;
+}
+
+#brand-name {
+    align-items: center;
+    /* Center items vertically */
+    margin: 20px;
+    /* White text color for menu bar */
+    padding: 10px;
+    padding-left: 0px;
+    display: flex;
+    /* Use flexbox to align items */
+    justify-content: space-between;
+    /* Space elements evenly */
+    font-size: 44px;
+    /* Adjust the font size */
+    font-weight: bold;
+    /* Make the text bold */
+    color: #000000;
+
+    /* Set the text color to black */
+    font-family: 'Arial', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+/* nav box3 */
+.nav-box3 {
+    display: flex;
+    justify-content: flex-end;
+    /* Align box3 to the right */
+    gap: 10px;
+    /* Add gap between box3 elements */
+
+    margin-left: 50px;
+
+}
+
+#call-us {
+    align-items: center;
+    /* Center items vertically */
+    margin: 20px;
+    color: #000000;
+    /* White text color for menu bar */
+    padding: 10px;
+    display: flex;
+    /* Use flexbox to align items */
+    justify-content: space-between;
+    /* Space elements evenly */
+    font-family: 'Verdana', sans-serif;
+    text-decoration: none;
+}
+#wishlist {
+    align-items: center;
+    /* Center items vertically */
+    margin: 20px;
+    color: #000000;
+    /* White text color for menu bar */
+    padding: 10px;
+    display: flex;
+    /* Use flexbox to align items */
+    justify-content: space-between;
+    /* Space elements evenly */
+    font-family: 'Verdana', sans-serif;
+    text-decoration: none;
+}
+
+/* navigation bar               END  */
+
+/* menu bar options*/
+
+#sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff; /* Change background color to white */
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 10;
+ 
+}
+
+#sidebar li {
+
+    list-style: none;
+   padding-top: 90px;
+
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: black; /* Change text color to black */
+    font-size: 18px;
+ 
+}
+
+#sidebar a:hover {
+    color: #a1a1a1;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+   
+}
+
+#sidebar.active {
+    width: 500px;
+}
+
+.overlay.active {
+    display: block;
+    background: rgba(0, 0, 0, 0.5); /* Change overlay background color and transparency */
+ 
+}
+body.sidebar-active {
+  
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+   
+}
+
+ 

@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hikk-project</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" id="main-stylesheet" href="nav.css">
 </head>
 
 <body>
+    <div class="overlay" onclick="closeSidebar(event)"></div>
+
     <!--navigation top of home page-->
-    <div class="navigation">
+
+    <div class="navigation" id="navbar" onmouseenter="changeStylesheet('nav-black.css')"
+        onmouseleave="changeStylesheet('nav.css')">
         <div class="nav-box1"><!-- left side box-->
-            <a href="#" id="menu-bar"><!--meanu bar icon or text-->
+
+            <div id="menu-bar" onclick="toggleSidebar(event)">
                 <svg width="30px" height="30px" viewBox="0 0 21.00 21.00" xmlns="http://www.w3.org/2000/svg" fill="none"
                     stroke="white" stroke-width="0.441">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -27,10 +33,10 @@
                         </g>
                     </g>
                 </svg>
-
                 Menu
-            </a>
-            <a href="#" id="search-lens"><!-- search bar icon or text-->
+            </div>
+
+            <a href="" id="search-lens"><!-- search bar icon or text-->
                 <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -49,10 +55,10 @@
         </div>
         <!-- center box heading-->
         <div class="nav-box2">
-        <a href="index.html">
-             <div id="brand-name">H I K K</div><!--brand name-->
-        </a>
-           
+            <a href="index.html">
+                <div id="brand-name">H I K K</div><!--brand name-->
+            </a>
+
         </div>
         <!--right box of navigation-->
         <div class="nav-box3">
@@ -60,45 +66,57 @@
             <a href="favourite.html" id="wishlist">Wishlist</a><!-- wishlist text-->
         </div>
     </div>
-    <!--home page image-->
-    <div class="home-main-img">
-        <img src="assets/home_background.jpg" alt="reload the site">
-    </div>
-    <!--home page products-->
-    <div class="home-page-products-container">
-        <div id="home-page-products">
-            <a href="#"> <img src="assets/t-shirt.jpg.webp" alt="reload...">
 
-                <li id="home-product-name">T-shirts</li>
-                <li id="home-product-selection">Explore the Selection</li>
-            </a>
+    <div id="sidebar">
+        <!-- Your sidebar content -->
+
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+
+    </div>
+    <div class="content">
+        <!-- Your page content goes here -->
+
+        <!--home page image-->
+        <div class="home-main-img">
+            <img src="assets/home_background.jpg" alt="reload the site">
         </div>
-        <div id="home-page-products">
+        <!--home page products-->
+        <div class="home-page-products-container">
+            <div id="home-page-products">
+                <a href="#"> <img src="assets/t-shirt.jpg.webp" alt="reload...">
+
+                    <li id="home-product-name">T-shirts</li>
+                    <li id="home-product-selection">Explore the Selection</li>
+                </a>
+            </div>
+            <div id="home-page-products">
+                <a href="#">
+                    <img src="assets/sweatshirt-jpg.webp" alt="reload...">
+
+                    <li id="home-product-name">Sweatshirts</li>
+                    <li id="home-product-selection">Explore the Selection</li>
+                </a>
+            </div>
+            <div id="home-page-products">
+                <a href="#">
+                    <img src="assets/hoddie.jpg.webp" alt="reload...">
+
+                    <li id="home-product-name">Hoodies</li>
+                    <li id="home-product-selection">Explore the Selection</li>
+                </a>
+            </div>
+        </div>
+
+        <div class="home-page-collections">
+            <img src="assets/home-collection.jpg.webp" alt="">
+
             <a href="#">
-                <img src="assets/sweatshirt-jpg.webp" alt="reload...">
-
-                <li id="home-product-name">Sweatshirts</li>
-                <li id="home-product-selection">Explore the Selection</li>
-            </a>
-        </div>
-        <div id="home-page-products">
-            <a href="#">
-                <img src="assets/hoddie.jpg.webp" alt="reload...">
-
-                <li id="home-product-name">Hoodies</li>
-                <li id="home-product-selection">Explore the Selection</li>
+                <div id="home-page-collection-view">VIEW</div>
             </a>
         </div>
     </div>
-
-    <div class="home-page-collections">
-        <img src="assets/home-collection.jpg.webp" alt="">
-
-        <a href="#">
-            <div id="home-page-collection-view">VIEW</div>
-        </a>
-    </div>
-
     <!-- home page footer  -->
     <div class="home-page-fotter-container1">
         <div id="home-page-fotter-items1">
@@ -107,7 +125,7 @@
             <a href="#">Email Unsubscribe</a>
             <a href="#">Services</a>
         </div>
-        
+
         <div id="home-page-fotter-items2">
             <a href="about.html">About Hikk</a>
             <a href="#">Legal</a>
@@ -118,7 +136,7 @@
 
 
 
-
+    <script src="menu-bar.js"></script>
 </body>
 
 </html>
