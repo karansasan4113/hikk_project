@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="my-account.css">
+    <title>sign in/up</title>
+</head>
+
+<body>
+
+    <div class="sign-up-in-img">
+        <img src="assets/myaccount.png" alt="reload the site">
+        <div class="text-overlay">
+            Sign in/register
+        </div>
+
+    </div>
+
+    <div class="form-container">
+        <div class="signin-container">
+            <h2>Sign In</h2>
+            <form class="signin-form">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Sign In</button>
+                </div>
+            </form>
+
+
+            <p id="forgot-password" onclick="openPopup()">Forgotten Password </p>
+
+            <div id="forgotPasswordModal" class="modal">
+
+
+
+                <div class="modal-content">
+                    <div class="close-btn" onclick="closePopup()">Close</div>
+                    <span class="close" onclick="closePopup()">&times;</span>
+
+                    <h2>Forgot Password</h2>
+                    <p>Enter your email and we will send details on how to reset your password.</p>
+                    <form id="forgotPasswordForm">
+                        <label for="email">Registered email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <button type="submit" onclick="submitForm()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="signup-container">
+            <h2>Register</h2>
+            <form class="signup-form" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" class="cus-dd" name="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <select id="title" name="title" class="cus-dd" required>
+                        <option value="" disabled selected></option>
+                        <option value="mr">Mr.</option>
+                        <option value="mrs">Mrs.</option>
+                        <option value="ms">Ms.</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password (letters and numbers):</label>
+                    <input type="password" id="password" name="password"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+                    <small>Password must contain at least 8 characters, including at least one letter and one
+                        number.</small>
+                </div>
+
+                <div class="subscribe-container">
+
+                    <div class="subscribe-text">
+
+                        <input type="checkbox" id="subscribeCheckbox" name="subscribeCheckbox" required>
+
+
+                        <label for="subscribeCheckbox">
+                            Subscribe to receive email updates about Hikk products, services,
+                            and events.
+                            When you subscribe, you confirm you have read Hikk’s Privacy Policy.
+                            You may opt out of receiving email updates at any time by using the unsubscribe link in the
+                            emails.
+                            You provide your personal information voluntarily and Hikk can only send you updates with
+                            your consent.
+                        </label>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>
+                        Your personal information will be managed by Hikk Limited, with its company address at [Hikk
+                        Address],
+                        and may be stored outside your country of residence.
+                        Hikk uses your personal information to offer an enhanced customer service tailored to your
+                        preferences
+                        and may share your personal information with Hikk group companies and third parties who
+                        support Hikk
+                        in providing products and services to you on Hikk’s behalf.
+
+                        By continuing, you confirm you have read our Privacy Policy and, where consent is required
+                        under local laws,
+                        you agree to the use of your personal information as described in our Privacy Policy,
+                        including in relation to the transfer and storage of your personal information outside your
+                        country of residence.
+                    </p>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="my-account.js"></script>
+</body>
+
+</html>

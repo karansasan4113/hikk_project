@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
 
 /* home main background image*/
 .home-main-img img {
@@ -52,15 +58,16 @@
 
 /*home page products display            END */
 /*home page collections-monthly*/
-.home-page-collections {
+/* .home-page-collections {
     position: relative;
 }
 
 .home-page-collections a {
     position: absolute;
-    font-size: 20px;
+ width: 10%;
     color: #fffdfd;
-    text-decoration: none;
+   border: #fffdfd solid 2px;
+    border-radius: 10px;
     top: 75%;
     left: 45%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -68,21 +75,57 @@
 }
 
 #home-page-collection-view {
+    display: flex;
+    flex: inherit;
     position: relative;
-    height: 30px;
-    width: 110px;
-    padding-top: 10px;
-    padding-left: 60px;
-    padding-bottom: 10px;
-    border: #fffdfd solid 2px;
-    border-radius: 10px;
+      font-size: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+   
 }
 
 .home-page-collections img {
 
     width: 100%;
-
+  
+} */
+.home-page-collections {
+    position: relative;
+    width: 100%;
+    /* Ensure the container takes up the full width */
 }
+
+.home-page-collections a {
+    position: absolute;
+    width: 10%;
+    color: #fffdfd;
+    border: #fffdfd solid 2px;
+    border-radius: 10px;
+    top: 75%;
+    left: 50%;
+    /* Center the link horizontally */
+    transform: translateX(-50%);
+    /* Adjust to center precisely */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    /* Remove underline from the link */
+
+    /* Additional styles for better visibility */
+    padding: 8px;
+    text-align: center;
+}
+
+#home-page-collection-view {
+    font-size: 20px;
+}
+
+.home-page-collections img {
+    width: 100%;
+    display: block;
+    /* Remove default image spacing */
+}
+
 
 /*home page collections-monthly     END */
 .home-page-fotter-container1 {
@@ -91,9 +134,9 @@
     display: flex;
     margin-top: 100px;
     padding: 50px;
-bottom: 0;
-    width: 1330px;
-  
+    bottom: 0;
+    width: 100%;
+
     left: 0;
     right: 0;
 }
@@ -131,4 +174,3 @@ bottom: 0;
     margin-left: 70px;
     padding: 40px;
 }
-

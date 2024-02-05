@@ -1,19 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    /* font-weight: 100; */
+    
+}
 
 /* navigation bar start */
-
 .navigation {
+    width: 100%;
     display: flex;
+    flex: inherit;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
-    background: transparent !important;
-    /* background-color: white; */
-    backdrop-filter: blur(100px);
-    transition: 0.3s ease-in-out;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: background-color 0.2s ease-in-out;
+    background: white;
   z-index: 9;
-
 }
 
 .navigation.hidden {
@@ -22,97 +31,57 @@
 /*nav box 1 */
 .nav-box1 {
     display: flex;
-
-    margin-right: 330px;
+    flex: inherit;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#menu-bar {
+#menu-bar{
     font-family: 'Verdana', sans-serif;
-    /* color: #000000; */
-   
-    /* White text color for menu bar */
-    
-    padding: 10px;
-    margin: 20px;
+    color: #000000;
+    padding: 20px;
     display: flex;
-    text-decoration: none;
-    /* Use flexbox to align items */
     justify-content: space-between;
-    /* Space elements evenly */
     align-items: center;
-    /* Center items vertically */
     cursor: pointer;
 }
 
-#menu-bar svg {
+ #menu-bar svg path,#search-lens svg path{
+    stroke: black;
+ }
+
+
+#menu-bar svg, #search-lens svg {
     width: 24px;
-    
-    /* Adjust the icon width */
     height: 24px;
-    /* Adjust the icon height */
-    fill: #000000;
-    /* Set the icon color */
     margin-right: 10px;
-    /* Add some spacing between icon and text */
-    vertical-align: middle;
-    /* Align the icon vertically */
+    align-items: center;
 } 
 
-#menu-bar svg path {
-    stroke: rgb(0, 0, 0); /* Change the stroke color to black */
-}
-#search-lens svg path{
-    stroke: rgb(0, 0, 0); /* Change the stroke color to black */
-}
-#search-lens svg {
-    width: 24px;
-    /* Adjust the icon width */
-    height: 24px;
-    /* Adjust the icon height */
-    fill: #000000;
-    /* Set the icon color */
-    margin-right: 10px;
-    /* Add some spacing between icon and text */
-    vertical-align: middle;
-    /* Align the icon vertically */
-
-}
-
 #search-lens {
-    margin: 20px;
     color: #000000;
-    /* White text color for menu bar */
-    padding: 10px;
+    padding: 20px;
     display: flex;
-    /* Use flexbox to align items */
     justify-content: space-between;
-    /* Space elements evenly */
     align-items: center;
-    /* Center items vertically */
     font-family: 'Verdana', sans-serif;
-    text-decoration: none;
 }
 
 /* nav box2 */
 .nav-box2 {
-    flex: 1;
+    display: flex;
+    flex: inherit;
     /* Allow box2 to grow and take up available space */
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     /* Center the content in box2 */
-
-    margin-right: 290px;
 }
 
 #brand-name {
     align-items: center;
     /* Center items vertically */
-    margin: 20px;
     /* White text color for menu bar */
-    padding: 10px;
-    padding-left: 0px;
-    display: flex;
     /* Use flexbox to align items */
-    justify-content: space-between;
     /* Space elements evenly */
     font-size: 44px;
     /* Adjust the font size */
@@ -130,40 +99,21 @@ a{
 /* nav box3 */
 .nav-box3 {
     display: flex;
-    justify-content: flex-end;
-    /* Align box3 to the right */
-    gap: 10px;
-    /* Add gap between box3 elements */
-
-    margin-left: 50px;
-
+    flex: inherit;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #call-us {
-    align-items: center;
-    /* Center items vertically */
-    margin: 20px;
+    padding: 20px;
     color: #000000;
-    /* White text color for menu bar */
-    padding: 10px;
-    display: flex;
-    /* Use flexbox to align items */
-    justify-content: space-between;
-    /* Space elements evenly */
     font-family: 'Verdana', sans-serif;
     text-decoration: none;
 }
+
 #wishlist {
-    align-items: center;
-    /* Center items vertically */
-    margin: 20px;
+    padding: 20px;
     color: #000000;
-    /* White text color for menu bar */
-    padding: 10px;
-    display: flex;
-    /* Use flexbox to align items */
-    justify-content: space-between;
-    /* Space elements evenly */
     font-family: 'Verdana', sans-serif;
     text-decoration: none;
 }
@@ -176,8 +126,6 @@ a{
     height: 100%;
     width: 0;
     position: fixed;
-    top: 0;
-    left: 0;
     background-color: #fff; /* Change background color to white */
     overflow-x: hidden;
     transition: 0.5s;
@@ -186,17 +134,22 @@ a{
 }
 
 #sidebar li {
-
-    list-style: none;
-   padding-top: 90px;
-
+display: flex;
+    list-style:none;
+  width: 100%;
+  height: 7vh;
+ padding-left: 8vh;
+  align-items: center;
+  
+  
 }
 
 #sidebar a {
     text-decoration: none;
+    list-style: none;
     color: black; /* Change text color to black */
     font-size: 18px;
- 
+
 }
 
 #sidebar a:hover {
@@ -230,5 +183,19 @@ body.sidebar-active {
     overflow: hidden;
    
 }
+#close-button {
+    cursor: pointer;
+   display: flex;
+   width: 100%;
+   height: 10vh;
+    justify-content:end;
+    align-items: center;
+   font-size: large;
+   padding-right: 7vh;
+    
+    /* Add additional styles based on your design preferences */
+}
 
- 
+#close-button:hover {
+    color: #a1a1a1;
+}

@@ -14,11 +14,10 @@
 
     <!--navigation top of home page-->
 
-    <div class="navigation" id="navbar" onmouseenter="changeStylesheet('nav-black.css')"
-        onmouseleave="changeStylesheet('nav.css')">
+    <div class="navigation" id="navbar">
         <div class="nav-box1"><!-- left side box-->
 
-            <div id="menu-bar" onclick="toggleSidebar(event)">
+            <a id="menu-bar" onclick="toggleSidebar(event)">
                 <svg width="30px" height="30px" viewBox="0 0 21.00 21.00" xmlns="http://www.w3.org/2000/svg" fill="none"
                     stroke="white" stroke-width="0.441">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -34,8 +33,8 @@
                     </g>
                 </svg>
                 Menu
-            </div>
-
+            </a>
+          
             <a href="" id="search-lens"><!-- search bar icon or text-->
                 <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -52,6 +51,7 @@
 
                 Search
             </a>
+            
         </div>
         <!-- center box heading-->
         <div class="nav-box2">
@@ -69,11 +69,20 @@
 
     <div id="sidebar">
         <!-- Your sidebar content -->
-
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-
+        <div id="close-button" onclick="closeSidebar()">Close</div>
+        <ul>
+        <li><a href="">My Account</a></li>
+        <li><a href="">Personalized Order</a></li>
+        <li><a href="">Your Order</a></li>
+        <li><a href="">Whats New</a></li>
+        <li><a href="">All Products</a></li>
+        <li><a href="favourite.html">Favourite</a></li>
+        <li><a href="">Add To Cart</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="">FAQs</a></li>
+        <li><a href="">Connect</a></li>
+        </ul>
     </div>
     <div class="content">
         <!-- Your page content goes here -->
