@@ -155,7 +155,6 @@ body{-webkit-font-smoothing: antialiased;}
   
 }
 
-
 /* Apply styles to the checkbox */
 input[type="checkbox"] {
     appearance: none; /* Remove default styles */
@@ -166,9 +165,10 @@ input[type="checkbox"] {
     border: 1px solid #000000; /* Border color of the checkbox */
     min-width: 20px;
     margin-top: 15px;
-margin-right: 15px;
+    margin-right: 15px;
     outline: none; /* Remove the default focus outline */
     cursor: pointer; /* Set cursor to pointer for better interaction */
+    box-sizing: border-box; /* Include border and padding in the width and height */
 }
 
 /* Apply styles when the checkbox is checked */
@@ -179,6 +179,7 @@ input[type="checkbox"]:checked {
 
 /* Style the checkmark inside the checkbox */
 input[type="checkbox"]:checked::before {
+    
     content: '\2713'; /* Unicode checkmark character */
     display: block;
     width: 100%;
@@ -187,7 +188,6 @@ input[type="checkbox"]:checked::before {
     line-height: 18px; /* Adjust the line height for vertical centering */
     text-align: center;
     color: #000; /* Change the color of the checkmark to black */
-  
 }
 
 

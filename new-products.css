@@ -1,0 +1,250 @@
+/* navigation bar start */
+.navigation {
+    display: flex;
+    position: fixed;
+}
+
+body {
+    background-color: rgb(237, 237, 237);
+}
+
+/*nav box 1 */
+.nav-box1 {
+    display: flex;
+
+    margin-right: 330px;
+}
+
+#menu-bar {
+    font-family: 'Verdana', sans-serif;
+    color: #000000;
+    /* White text color for menu bar */
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    text-decoration: none;
+    /* Use flexbox to align items */
+    justify-content: space-between;
+    /* Space elements evenly */
+    align-items: center;
+    /* Center items vertically */
+}
+
+#menu-bar svg {
+    width: 24px;
+    /* Adjust the icon width */
+    height: 24px;
+    /* Adjust the icon height */
+    fill: #000000;
+    /* Set the icon color */
+    margin-right: 10px;
+    /* Add some spacing between icon and text */
+    vertical-align: middle;
+    /* Align the icon vertically */
+}
+
+#search-lens svg {
+    width: 24px;
+    /* Adjust the icon width */
+    height: 24px;
+    /* Adjust the icon height */
+    fill: #000000;
+    /* Set the icon color */
+    margin-right: 10px;
+    /* Add some spacing between icon and text */
+    vertical-align: middle;
+    /* Align the icon vertically */
+
+}
+
+#search-lens {
+    margin: 20px;
+    color: #000000;
+    /* White text color for menu bar */
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+    /* Use flexbox to align items */
+    justify-content: space-between;
+    /* Space elements evenly */
+    align-items: center;
+    /* Center items vertically */
+    font-family: 'Verdana', sans-serif;
+}
+
+/* nav box2 */
+.nav-box2 {
+    flex: 1;
+    /* Allow box2 to grow and take up available space */
+    text-align: center;
+    /* Center the content in box2 */
+
+    margin-right: 290px;
+}
+
+#brand-name {
+    align-items: center;
+    /* Center items vertically */
+    margin: 20px;
+    /* White text color for menu bar */
+    padding: 10px;
+    padding-left: 0px;
+    display: flex;
+    /* Use flexbox to align items */
+    justify-content: space-between;
+    /* Space elements evenly */
+    font-size: 44px;
+    /* Adjust the font size */
+    font-weight: bold;
+    /* Make the text bold */
+    color: #000000;
+    text-decoration: none;
+    /* Set the text color to black */
+    font-family: 'Arial', sans-serif;
+}
+
+/* nav box3 */
+.nav-box3 {
+    display: flex;
+    justify-content: flex-end;
+    /* Align box3 to the right */
+    gap: 10px;
+    /* Add gap between box3 elements */
+
+    margin-left: 50px;
+
+}
+
+#call-us {
+    align-items: center;
+    /* Center items vertically */
+    margin: 20px;
+    color: #000000;
+    /* White text color for menu bar */
+    padding: 10px;
+    display: flex;
+    /* Use flexbox to align items */
+    justify-content: space-between;
+    /* Space elements evenly */
+    font-family: 'Verdana', sans-serif;
+    text-decoration: none;
+}
+
+#wishlist {
+    align-items: center;
+    /* Center items vertically */
+    margin: 20px;
+    color: #000000;
+    /* White text color for menu bar */
+    padding: 10px;
+    display: flex;
+    /* Use flexbox to align items */
+    justify-content: space-between;
+    /* Space elements evenly */
+    font-family: 'Verdana', sans-serif;
+    text-decoration: none;
+}
+
+/* navigation end here */
+
+/* favourite clothes start here*/
+.favourite-heading {
+    padding-top: 100px;
+    padding-left: 60px;
+}
+
+/*favourite page products display*/
+.home-page-products-container {
+
+    display: flex;
+    padding: 20px;
+    margin-bottom: 80px;
+
+
+}
+
+#home-page-products img {
+    height: 90%;
+    width: 100%;
+}
+
+#home-page-products {
+    padding: 20px;
+
+}
+
+#home-page-products li {
+    list-style: none;
+    padding-top: 20px;
+
+}
+
+#home-product-name {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: black;
+    display: flex;
+
+}
+
+#home-page-products a {
+    text-decoration: none;
+
+}
+
+#home-product-selection {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+/*favourite icon heart*/
+
+#favourite-icon {
+    padding-left: 290px;
+}
+
+/*favourite products display            END */
+
+/*  footer */
+.home-page-fotter-container1 {
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    margin-top: 100px;
+    padding: 50px;
+
+    width: 100%;
+}
+#home-page-fotter-items1 a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    width: 100%;
+    margin: 30px;
+    padding: 8px;
+    display: block;
+    /* border: #fffdfd solid 2px; */
+}
+
+#home-page-fotter-items2 a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    width: 100%;
+    margin: 30px;
+    padding: 8px;
+    margin-left: 290px;
+    display: block;
+    /* border: #fffdfd solid 2px; */
+}
+
+#home-page-fotter-items3 {
+    color: #ffffff;
+    font-size: 15px;
+    /* border: #fffdfd solid 2px; */
+    display: block;
+    width: 100%;
+    margin-left: 70px;
+    padding: 40px;
+}

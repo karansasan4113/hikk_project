@@ -1,0 +1,282 @@
+/* navigation bar start */
+.navigation {
+    display: flex;
+    position: fixed;
+}
+
+body {
+    background-color: rgb(237, 237, 237);
+}
+
+/*nav box 1 */
+.nav-box1 {
+    display: flex;
+
+    margin-right: 330px;
+}
+
+#menu-bar {
+    font-family: 'Verdana', sans-serif;
+    color: #000000;
+    /* White text color for menu bar */
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    text-decoration: none;
+    /* Use flexbox to align items */
+    justify-content: space-between;
+    /* Space elements evenly */
+    align-items: center;
+    /* Center items vertically */
+}
+
+#menu-bar svg {
+    width: 24px;
+    /* Adjust the icon width */
+    height: 24px;
+    /* Adjust the icon height */
+    fill: #000000;
+    /* Set the icon color */
+    margin-right: 10px;
+    /* Add some spacing between icon and text */
+    vertical-align: middle;
+    /* Align the icon vertically */
+}
+
+#search-lens svg {
+    width: 24px;
+    /* Adjust the icon width */
+    height: 24px;
+    /* Adjust the icon height */
+    fill: #000000;
+    /* Set the icon color */
+    margin-right: 10px;
+    /* Add some spacing between icon and text */
+    vertical-align: middle;
+    /* Align the icon vertically */
+
+}
+
+#search-lens {
+    margin: 20px;
+    color: #000000;
+    /* White text color for menu bar */
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+    /* Use flexbox to align items */
+    justify-content: space-between;
+    /* Space elements evenly */
+    align-items: center;
+    /* Center items vertically */
+    font-family: 'Verdana', sans-serif;
+}
+
+/* nav box2 */
+.nav-box2 {
+    flex: 1;
+    /* Allow box2 to grow and take up available space */
+    text-align: center;
+    /* Center the content in box2 */
+
+    margin-right: 290px;
+}
+
+#brand-name {
+    align-items: center;
+    /* Center items vertically */
+    margin: 20px;
+    /* White text color for menu bar */
+    padding: 10px;
+    padding-left: 0px;
+    display: flex;
+    /* Use flexbox to align items */
+    justify-content: space-between;
+    /* Space elements evenly */
+    font-size: 44px;
+    /* Adjust the font size */
+    font-weight: bold;
+    /* Make the text bold */
+    color: #000000;
+    text-decoration: none;
+    /* Set the text color to black */
+    font-family: 'Arial', sans-serif;
+}
+
+/* nav box3 */
+.nav-box3 {
+    display: flex;
+    justify-content: flex-end;
+    /* Align box3 to the right */
+    gap: 10px;
+    /* Add gap between box3 elements */
+
+    margin-left: 50px;
+
+}
+
+#call-us {
+    align-items: center;
+    /* Center items vertically */
+    margin: 20px;
+    color: #000000;
+    /* White text color for menu bar */
+    padding: 10px;
+    display: flex;
+    /* Use flexbox to align items */
+    justify-content: space-between;
+    /* Space elements evenly */
+    font-family: 'Verdana', sans-serif;
+    text-decoration: none;
+}
+
+#wishlist {
+    align-items: center;
+    /* Center items vertically */
+    margin: 20px;
+    color: #000000;
+    /* White text color for menu bar */
+    padding: 10px;
+    display: flex;
+    /* Use flexbox to align items */
+    justify-content: space-between;
+    /* Space elements evenly */
+    font-family: 'Verdana', sans-serif;
+    text-decoration: none;
+}
+
+/* navigation end here */
+
+/* favourite clothes start here*/
+.favourite-heading {
+    padding-top: 100px;
+    padding-left: 20px;
+}
+/*favourite page products display*/
+/* Section options */
+.section-options {
+    display: flex;
+   /* Align section options evenly */
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+}
+
+.section-option {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+
+.section-option.active {
+   color: #082bca; /* Change background color for active option */
+}
+
+/* Product container */
+.home-page-products-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow products to wrap to the next line */
+    gap: 20px; /* Add gap between products */
+    padding: 20px;
+}
+
+/* Product */
+.product {
+    flex-basis: calc(33.33% - 20px); /* Set width for each product, considering gap */
+    /* border: 1px solid #ccc;*/ /* Add border around products */
+    /* border-radius: 5px; */ 
+    /* padding: 10px; */
+}
+
+/* Product image */
+.product img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Product name */
+#home-product-name {
+    display: flex;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: black;
+    margin-bottom: 5px; /* Add space between product name and price */
+}
+#home-page-products li {
+    list-style: none;
+    padding-top: 20px;
+
+}
+/* Product selection */
+#home-product-selection {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #000000; /* Change color for price */
+    padding-bottom: 30px;
+}
+#home-page-products a {
+    text-decoration: none;
+
+}
+/* Favourite icon */
+
+
+/*favourite products display            END */
+
+/*  footer */
+.home-page-fotter-container1 {
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    margin-top: 100px;
+    padding: 50px;
+
+    width: 100%;
+}
+#home-page-fotter-items1 a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    width: 100%;
+    margin: 30px;
+    padding: 8px;
+    display: block;
+    /* border: #fffdfd solid 2px; */
+}
+
+#home-page-fotter-items2 a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    width: 100%;
+    margin: 30px;
+    padding: 8px;
+    margin-left: 290px;
+    display: block;
+    /* border: #fffdfd solid 2px; */
+}
+
+#home-page-fotter-items3 {
+    color: #ffffff;
+    font-size: 15px;
+    /* border: #fffdfd solid 2px; */
+    display: block;
+    width: 100%;
+    margin-left: 70px;
+    padding: 40px;
+}
+.product {
+    display: none; /* Hide all products by default */
+}
+
+.active {
+    display: block; /* Show the active product section */
+}
+
+
+
+.straight-line {
+    border-top: 1px solid black; /* You can adjust the color and thickness as needed */
+}
+#favourite-icon {
+padding-left: 320px;
+}
