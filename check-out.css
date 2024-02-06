@@ -1,0 +1,253 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(239, 239, 239);
+    display: flex;
+}
+/* Container styles */
+/* Flex container styles */
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Flex container for first name and last name */
+.name-container {
+    display: flex;
+    gap: 10px;
+}
+
+/* Flex container for city, state, and PIN code */
+.location-container {
+    display: flex;
+    gap: 10px;
+}
+
+/* Set the width for each input field */
+.section input[type="text"],
+.section input[type="tel"] {
+    width: 100%;
+}
+
+/* Section styles */
+.section {
+    margin-bottom: 20px;
+}
+
+/* Input field styles */
+input[type="email"],
+input[type="text"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 4px;
+    outline: none;
+    background-color: rgb(239, 239, 239);
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Button styles */
+.pay-now-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+}
+
+/* Button hover effect */
+
+/* Container styles */
+.container {
+    display: flex;
+padding-left: 15%;
+padding-right: 7%;
+   
+    width: 60%;
+    
+}
+
+/* Checkout section styles */
+.checkout-section {
+    flex: 1;
+   
+}
+
+/* Product section styles */
+.product-section {
+    flex: 1;
+}
+
+/* Selected product styles */
+.selected-product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.selected-product h2 {
+    margin-bottom: 10px;
+}
+
+/* Product details styles */
+.product-details {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details h2 {
+    color: #333;
+}
+
+/* Checkout details styles */
+.checkout-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.checkout-details h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Cost summary styles */
+.cost-summary p {
+    margin-bottom: 10px;
+}
+
+/* Discount code styles */
+.discount-code input {
+    width: calc(100% - 80px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.discount-code button {
+    padding: 8px 16px;
+    background-color:rgb(229, 229, 229);
+    color: rgb(118, 118, 118);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+label{
+ width: 100%; 
+ height: 100%;   
+}
+
+
+
+
+/* Style for the billing details section */
+.billing-details {
+    display: none; /* Initially hide the billing details */
+  }
+
+  
+  /* Style for radio buttons */
+input[type="radio"] {
+    appearance: none; /* Remove default styles */
+    -webkit-appearance: none; /* For older versions of Chrome and Safari */
+    -moz-appearance: none; /* For older versions of Firefox */
+    width: 20px; /* Set the width of the custom radio button */
+    height: 20px; /* Set the height of the custom radio button */
+    border: 1px solid #000000; /* Border color of the radio button */
+    border-radius: 50%; /* Make it a circle */
+    margin-right: 10px; /* Adjust spacing between radio button and label */
+    cursor: pointer; /* Set cursor to pointer for better interaction */
+    padding: 5px; /* Add padding to the radio button */
+    box-sizing: border-box; /* Include padding and border in the width and height */
+  }
+  
+  /* Style for radio buttons when checked */
+  input[type="radio"]:checked {
+    background-color: #ffffff; /* Background color when checked */
+    border: 5px solid #000000;
+    border-color: #050505; /* Border color when checked */
+  }
+  
+  /* Hide default radio button */
+  input[type="radio"]::-ms-check,
+  input[type="radio"]::-webkit-check {
+    display: none;
+  }
+  #billing-radio {
+    display: block; /* Ensure each label is on its own line */
+    padding: 10px; /* Add padding for spacing */
+    border: 1px solid #ccc; /* Add default border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    margin-bottom: 10px; /* Add margin to separate labels */
+}
+
+.border-highlight {
+    border: 1px solid #000000; /* Add default border */
+}
+#shipping-method{
+    background-color: rgb(229, 229, 229);
+    height: 50px;
+color: rgb(102, 102, 102);
+padding: 15px;
+border-radius: 4px;
+}
+
+
+.payment-section {
+    background-color: rgb(229, 229, 229);
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+
+
+.payment-methods label {
+    display: flex;
+  height: 60px;
+    border: 1px solid #000000; /* Add default border */ 
+    align-items: center; /* Align items vertically at the center */
+    justify-content: center;
+    background-color: rgb(239, 239, 239);
+}
+
+.payment-section p{
+    height: 200px;
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+}
+
+.product {
+    flex: 1;
+}
+
+/* Style for the vertical line */
+.product + .product {
+    border-left: 1px solid #000000; /* Adjust color and width as needed */
+    padding-left: 20px; /* Adjust as needed to create space between products */
+}

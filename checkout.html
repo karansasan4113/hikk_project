@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="check-out.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+
+
+        <div class="container">
+
+            <div class="checkout-section">
+                <h4>Checkout</h4>
+                <!-- Contact Information -->
+                <div class="section">
+                    <h4>Contact Information</h4>
+                    <input type="email" placeholder="Email">
+                    <label>
+                        <input type="checkbox"> Email me with news and offers
+                    </label>
+                </div>
+                <!-- Delivery Information -->
+                <div class="section">
+                    <h4>Delivery Information</h4>
+                    <div class="name-container">
+                        <input type="text" placeholder="First name">
+                        <input type="text" placeholder="Last name">
+                    </div>
+                    <input type="text" placeholder="Company (optional)">
+                    <input type="text" placeholder="Address">
+                    <input type="text" placeholder="Apartment, suite, etc. (optional)">
+                    <div class="location-container">
+                        <input type="text" placeholder="City">
+                        <input type="text" placeholder="State">
+                        <input type="text" placeholder="PIN code">
+                    </div>
+                    <input type="tel" placeholder="Phone">
+                    <label>
+                        <input type="checkbox"> Save this information for next time
+                    </label>
+                </div>
+
+                <!-- Shipping Method -->
+                <div class="section">
+                    <h4>Shipping Method</h4>
+                    <div id="shipping-method">
+                        enter your shipping details to know the shipping method;
+                    </div>
+                    <!-- Shipping options will be displayed here -->
+                    <!-- Options could be radio buttons or a dropdown menu -->
+                </div>
+                <!-- Payment -->
+                <div class="section">
+                    <h4>Payment</h4>
+                    <p>All transactions are secure and encrypted.</p>
+                    <section class="payment-section">
+
+
+                        <div class="payment-methods">
+                            <label>
+
+                                Razorpay Secure (UPI, Cards, Wallets, NetBanking)
+                            </label>
+
+                        </div>
+                        <div>
+                            <p>After clicking “Pay now”, you will be redirected to Razorpay Secure (UPI, Cards, Wallets,
+                                NetBanking) to complete your purchase securely.</p>
+                        </div>
+
+
+
+                    </section>
+
+                    <!-- Payment method options will be displayed here -->
+                    <!-- Options could be radio buttons or a list of icons -->
+                </div>
+                <!-- Billing Address -->
+                <div class="section">
+                    <div class="billing-address">
+                        <h2>Billing address</h2>
+                        <div class="billing-options">
+                            <label id="billing-radio" class="border-highlight">
+                                <input type="radio" name="billing-option" value="same" checked
+                                    onclick="toggleBillingDetails(this)">
+                                Same as shipping address
+                            </label>
+                            <label id="billing-radio" class="border-highlight">
+                                <input type="radio" name="billing-option" value="different"
+                                    onclick="toggleBillingDetails(this)">
+                                Use a different billing address
+                            </label>
+
+                        </div>
+                        <div class="billing-details" id="billing-details">
+                            <!-- Billing details inputs go here -->
+                            <input type="text" placeholder="Country/Region">
+                            <input type="text" placeholder="First name">
+                            <input type="text" placeholder="Last name">
+                            <input type="text" placeholder="Company (optional)">
+                            <input type="text" placeholder="Address">
+                            <input type="text" placeholder="Apartment, suite, etc. (optional)">
+                            <input type="text" placeholder="City">
+                            <input type="text" placeholder="State">
+                            <input type="text" placeholder="PIN code">
+                            <input type="tel" placeholder="Phone (optional)">
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- Pay Now Button -->
+                <button class="pay-now-button">Pay now</button>
+            </div>
+
+        </div>
+        <div class="product-section">
+            <div class="product-details">
+                <h2>PINK SNAKE T-SHIRT</h2>
+                <p>Size: XXXS</p>
+                <p>Quantity: 1</p>
+                <p>Price: ₹3,995.00</p>
+            </div>
+            <div class="checkout-details">
+                <h2>Cost Summary</h2>
+                <div class="cost-summary">
+                    <p>Subtotal: ₹3,995.00</p>
+                    <p>Shipping: Enter shipping address</p>
+                    <p>Total: Including ₹329.86 in taxes</p>
+                </div>
+                <h2>Discount code or gift card</h2>
+                <div class="discount-code">
+                    <!-- Form for entering discount code or gift card -->
+                    <input type="text" placeholder="Enter code">
+                    <button>Submit</button>
+                </div>
+            </div>
+
+    <script src="check-out.js"></script>
+</body>
+
+</html>
