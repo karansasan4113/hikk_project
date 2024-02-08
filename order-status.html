@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Status</title>
+    <link rel="stylesheet" href="order-status.css">
+</head>
+
+<body>
+
+    <h1>Track Your Order</h1>
+
+    <div class="track-order-container">
+        <input type="text" id="orderID" placeholder="Enter your order ID">
+        <button onclick="trackOrder()">Track</button>
+    </div>
+
+    <h1>Order Status</h1>
+    <div class="order-navigation">
+        <button onclick="showCurrentOrders()">Current Orders</button>
+        <button onclick="showPastOrders()">Past Orders</button>
+    </div>
+    <div class="order-status" id="orderStatus">
+        <!-- Order status will be dynamically populated here -->
+        <ul class="order-cards"></ul>
+    </div>
+
+
+
+    <script src="order-status.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(239, 239, 239);
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.order-status {
+    margin: 20px auto;
+    padding: 20px;
+
+
+    background-color: rgb(239, 239, 239);
+    overflow-y: auto;
+    /* Horizontal scrolling */
+    max-height: 100%;
+    /* Ensure the container takes up all available width */
+    /* Ensure no overflow */
+    /* Set a maximum width to prevent it from stretching too much on larger screens */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Add gap between order cards */
+
+    justify-content: space-between;
+}
+
+
+
+
+.order-status ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.order-status li {
+    margin-bottom: 20px;
+
+}
+
+.order-status img {
+    min-width: 100px;
+    max-width: 300px;
+    /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+
+
+.order-status span {
+    font-weight: bold;
+    margin-right: 10px;
+
+
+}
+
+.order-navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.order-navigation button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.order-card {
+    flex: 0 0 calc(33.33% - 20px);
+    /* Ensure each order card fills the available space */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 300px;
+
+    /* Ensure contents don't overflow */
+}
+
+.order-card img {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.order-details {
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.order-details li {
+    padding: 5px 0;
+}
+
+.order-card span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+
+.track-order-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.track-order-container input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.track-order-container button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
