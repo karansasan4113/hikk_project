@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    border: none;
+
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: medium;
+}
+
+p {
+    margin-bottom: 0;
+    line-height: 1.6;
+    /* Adjust line height for better readability */
+    font-size: small;
+    color: gray;
+}
+
+
+.faq-section {
+    padding: 30px;
+}
+
+.transparent {
+    background-color: transparent !important;
+    color: black !important;
+    border: 1px solid black;
+}

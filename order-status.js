@@ -122,10 +122,10 @@ function showPastOrders() {
 }
 
 // Function to track order
-function trackOrder(orderNumber) {
-    // Redirect to order tracking page with order number
-    window.location.href = `track-order.html?orderNumber=${orderNumber}`;
-}
+// function trackOrder(orderNumber) {
+//     // Redirect to order tracking page with order number
+//     window.location.href = `track-order.html?orderNumber=${orderNumber}`;
+// }
 
 // Show current orders by default
 showCurrentOrders();
