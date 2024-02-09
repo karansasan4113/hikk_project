@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="product-page.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Left side for product information -->
+        <div class="left-side">
+            <div class="product-name-cost">
+                <div id="product-name">MUSTARD SHIZEN T-SHIRT</div>
+                <div id="product-cost">49905</div>
+            </div>
+            <div class="button-container">
+                <button id="productButton" onclick="showProductFAQ()">Description</button>
+                <button onclick="showDeliveryFAQ()">Details</button>
+                <button onclick="showCustomerServiceFAQ()">Shipping</button>
+
+
+            </div>
+
+            <div class="faq-section" id="faqSection">
+                <!-- FAQ content will be dynamically populated here -->
+            </div>
+            <!-- You can add more product details here -->
+        </div>
+
+
+        <div class="middle-section">
+            <!-- Scrollable image section -->
+            <div class="image-container">
+                <img src="assets/t-shirt.jpg.webp" alt="Image 1">
+                <img src="assets/t-shirt.jpg.webp" alt="Image 1">
+                <img src="assets/t-shirt.jpg.webp" alt="Image 1">
+                <img src="assets/t-shirt.jpg.webp" alt="Image 1">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+
+
+
+
+        <!-- Right side for selecting size, adding to cart button, and shipping details -->
+        <div class="right-side">
+            <h2>Select Size</h2>
+
+                <div class="size-buttons">
+                    <button class="size-button" onclick="selectSize('S')">S</button>
+                    <button class="size-button" onclick="selectSize('M')">M</button>
+                    <button class="size-button" onclick="selectSize('L')">L</button>
+                    <button class="size-button" onclick="selectSize('XL')">XL</button>
+                    <!-- Add more buttons for other sizes as needed -->
+                </div>
+
+                <button id="add-to-cart-btn">Add to Cart</button>
+                <button id="buy now-btn">buy now</button>
+                <!-- You can also display shipping details here -->
+        </div>
+    </div>
+
+    <!-- Link to your JavaScript file -->
+    <script src="product-page.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+
+    width: 100%;
+}
+
+.product-name-cost {
+    display: flex;
+
+    padding-bottom: 20px;
+}
+
+#product-cost {
+    padding-left: 150px;
+}
+
+.left-side,
+.right-side {
+    flex: 1;
+
+    position: sticky;
+    top: 500px;
+}
+
+#add-to-cart-btn {
+    margin-left: 120px;
+
+}
+
+.middle-section {
+    flex: 1.3;
+
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+
+
+    /* Set a maximum height for the scrollable area */
+}
+
+.image-container {
+    display: block;
+
+    /* Change display property to block */
+}
+
+.image-container img {
+    display: block;
+    /* Change display property to block */
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    /* Add some space between images */
+}
+
+
+
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    border: none;
+
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: medium;
+    padding-left: 10px;
+}
+
+p {
+    margin-bottom: 0;
+    line-height: 1.6;
+    /* Adjust line height for better readability */
+    font-size: small;
+    color: gray;
+}
+
+
+.faq-section {
+    padding: 30px;
+}
+
+.transparent {
+    background-color: transparent !important;
+    color: black !important;
+    border: 1px solid black;
+}
+
+
+.size-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+.size-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    background-color: transparent;
+    color: #000000;
+}
+
+
+
+
+.selected {
+    /* Styles for the selected button */
+    background-color: #000000;
+    color: #ffffff;
+    /* Change to your desired color */
+}
