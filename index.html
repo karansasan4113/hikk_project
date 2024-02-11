@@ -11,6 +11,7 @@
 
 <body>
     <div class="overlay" onclick="closeSidebar(event)"></div>
+    <div class="right-overlay" onclick="closerightSidebar(event)"></div>
 
     <!--navigation top of home page-->
 
@@ -34,7 +35,7 @@
                 </svg>
                 Menu
             </a>
-          
+
             <a href="" id="search-lens"><!-- search bar icon or text-->
                 <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +52,7 @@
 
                 Search
             </a>
-            
+
         </div>
         <!-- center box heading-->
         <div class="nav-box2">
@@ -62,26 +63,243 @@
         </div>
         <!--right box of navigation-->
         <div class="nav-box3">
-            <a href="contact.html" id="call-us">Call Us</a><!--call us or contact text-->
+
+
+
+            <div id="my-cart" onclick="togglerightSidebar(event)">My Cart</div>
+
+
+
+
+
+
+
             <a href="favourite.html" id="wishlist">Wishlist</a><!-- wishlist text-->
         </div>
     </div>
+
+    <div id="right-sidebar">
+        <!-- Your sidebar content -->
+        <div id="right-close-button" onclick="closerightSidebar()">Close</div>
+        <!-- My Cart section -->
+        <div class="cart-item">
+            <div class="product1">
+
+
+                <div class="product-image">
+                    <!-- Product image goes here -->
+                    <img src="assets/hoddie.jpg.webp" alt="">
+                </div>
+                <div class="product-details">
+                    <div class="product-name-cost">
+                        <div id="product-name">MUSTARD SHIZEN T-SHIRT</div>
+                        <div id="product-cost">49905</div>
+                    </div>
+                    <div class="size">Size:XXXS</div>
+                    <div class="price-container">
+
+                        <span id="product-price" class="price" data-unit-price="4995">RS. 4,995</span>
+                    </div>
+                    <div class="add-delete-minus">
+
+
+                        <div class="quantity-controls">
+                            <button class="decrease-btn" onclick="decreaseQuantity('price')">-</button>
+                            <span class="quantity" id="quantity">1</span>
+                            <button class="increase-btn" onclick="increaseQuantity('price')">+</button>
+                        </div>
+                        <svg class="small-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M170.5 51.6L151.5 80h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6H177.1c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6L354.2 80H368h48 8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V432c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128H24c-13.3 0-24-10.7-24-24S10.7 80 24 80h8H80 93.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128V432c0 17.7 14.3 32 32 32H336c17.7 0 32-14.3 32-32V128H80zm80 64V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="product1">
+
+
+                <div class="product-image">
+                    <!-- Product image goes here -->
+                    <img src="assets/hoddie.jpg.webp" alt="">
+                </div>
+                <div class="product-details">
+                    <div class="product-name-cost">
+                        <div id="product-name">MUSTARD SHIZEN T-SHIRT</div>
+                        <div id="product-cost">49905</div>
+                    </div>
+                    <div class="size">Size:XXXS</div>
+                    <div class="price-container">
+
+                        <span id="product-price" class="price" data-unit-price="4995">RS. 4,995</span>
+                    </div>
+                    <div class="add-delete-minus">
+
+
+                        <div class="quantity-controls">
+                            <button class="decrease-btn" onclick="decreaseQuantity('price')">-</button>
+                            <span class="quantity" id="quantity">1</span>
+                            <button class="increase-btn" onclick="increaseQuantity('price')">+</button>
+                        </div>
+                        <svg class="small-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M170.5 51.6L151.5 80h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6H177.1c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6L354.2 80H368h48 8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V432c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128H24c-13.3 0-24-10.7-24-24S10.7 80 24 80h8H80 93.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128V432c0 17.7 14.3 32 32 32H336c17.7 0 32-14.3 32-32V128H80zm80 64V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="product1">
+
+
+                <div class="product-image">
+                    <!-- Product image goes here -->
+                    <img src="assets/hoddie.jpg.webp" alt="">
+                </div>
+                <div class="product-details">
+                    <div class="product-name-cost">
+                        <div id="product-name">MUSTARD SHIZEN T-SHIRT</div>
+                        <div id="product-cost">49905</div>
+                    </div>
+                    <div class="size">Size:XXXS</div>
+                    <div class="price-container">
+
+                        <span id="product-price" class="price" data-unit-price="4995">RS. 4,995</span>
+                    </div>
+                    <div class="add-delete-minus">
+
+
+                        <div class="quantity-controls">
+                            <button class="decrease-btn" onclick="decreaseQuantity('price')">-</button>
+                            <span class="quantity" id="quantity">1</span>
+                            <button class="increase-btn" onclick="increaseQuantity('price')">+</button>
+                        </div>
+                        <svg class="small-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M170.5 51.6L151.5 80h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6H177.1c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6L354.2 80H368h48 8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V432c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128H24c-13.3 0-24-10.7-24-24S10.7 80 24 80h8H80 93.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128V432c0 17.7 14.3 32 32 32H336c17.7 0 32-14.3 32-32V128H80zm80 64V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="product1">
+
+
+                <div class="product-image">
+                    <!-- Product image goes here -->
+                    <img src="assets/hoddie.jpg.webp" alt="">
+                </div>
+                <div class="product-details">
+                    <div class="product-name-cost">
+                        <div id="product-name">MUSTARD SHIZEN T-SHIRT</div>
+                        <div id="product-cost">49905</div>
+                    </div>
+                    <div class="size">Size:XXXS</div>
+                    <div class="price-container">
+
+                        <span id="product-price" class="price" data-unit-price="4995">RS. 4,995</span>
+                    </div>
+                    <div class="add-delete-minus">
+
+
+                        <div class="quantity-controls">
+                            <button class="decrease-btn" onclick="decreaseQuantity('price')">-</button>
+                            <span class="quantity" id="quantity">1</span>
+                            <button class="increase-btn" onclick="increaseQuantity('price')">+</button>
+                        </div>
+                        <svg class="small-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M170.5 51.6L151.5 80h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6H177.1c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6L354.2 80H368h48 8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V432c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128H24c-13.3 0-24-10.7-24-24S10.7 80 24 80h8H80 93.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128V432c0 17.7 14.3 32 32 32H336c17.7 0 32-14.3 32-32V128H80zm80 64V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="product1">
+
+
+                <div class="product-image">
+                    <!-- Product image goes here -->
+                    <img src="assets/hoddie.jpg.webp" alt="">
+                </div>
+                <div class="product-details">
+                    <div class="product-name-cost">
+                        <div id="product-name">MUSTARD SHIZEN T-SHIRT</div>
+                        <div id="product-cost">49905</div>
+                    </div>
+                    <div class="size">Size:XXXS</div>
+                    <div class="price-container">
+
+                        <span id="product-price" class="price" data-unit-price="4995">RS. 4,995</span>
+                    </div>
+                    <div class="add-delete-minus">
+
+
+                        <div class="quantity-controls">
+                            <button class="decrease-btn" onclick="decreaseQuantity('price')">-</button>
+                            <span class="quantity" id="quantity">1</span>
+                            <button class="increase-btn" onclick="increaseQuantity('price')">+</button>
+                        </div>
+                        <svg class="small-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M170.5 51.6L151.5 80h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6H177.1c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6L354.2 80H368h48 8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V432c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128H24c-13.3 0-24-10.7-24-24S10.7 80 24 80h8H80 93.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128V432c0 17.7 14.3 32 32 32H336c17.7 0 32-14.3 32-32V128H80zm80 64V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="product1">
+
+
+                <div class="product-image">
+                    <!-- Product image goes here -->
+                    <img src="assets/hoddie.jpg.webp" alt="">
+                </div>
+                <div class="product-details">
+                    <div class="product-name-cost">
+                        <div id="product-name">MUSTARD SHIZEN T-SHIRT</div>
+                        <div id="product-cost">49905</div>
+                    </div>
+                    <div class="size">Size:XXXS</div>
+                    <div class="price-container">
+
+                        <span id="product-price" class="price" data-unit-price="4995">RS. 4,995</span>
+                    </div>
+                    <div class="add-delete-minus">
+
+
+                        <div class="quantity-controls">
+                            <button class="decrease-btn" onclick="decreaseQuantity('price')">-</button>
+                            <span class="quantity" id="quantity">1</span>
+                            <button class="increase-btn" onclick="increaseQuantity('price')">+</button>
+                        </div>
+                        <svg class="small-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M170.5 51.6L151.5 80h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6H177.1c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6L354.2 80H368h48 8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V432c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128H24c-13.3 0-24-10.7-24-24S10.7 80 24 80h8H80 93.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128V432c0 17.7 14.3 32 32 32H336c17.7 0 32-14.3 32-32V128H80zm80 64V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="checkout-container">
+
+            <button id="checkout-button" onclick="checkout()">Checkout</button>
+        </div>
+
+    </div>
+
 
     <div id="sidebar">
         <!-- Your sidebar content -->
         <div id="close-button" onclick="closeSidebar()">Close</div>
         <ul>
-        <li><a href="my-account.html">My Account</a></li>
-        <li><a href="">Personalized Order</a></li>
-        <li><a href="">Your Order</a></li>
-        <li><a href="new-products.html">Whats New</a></li>
-        <li><a href="all-products.html">All Products</a></li>
-        <li><a href="favourite.html">Favourite</a></li>
-        <li><a href="">Add To Cart</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="">FAQs</a></li>
-        <li><a href="">Connect</a></li>
+            <li><a href="my-account.html">My Account</a></li>
+            <li><a href="personalized.html">Personalized Order</a></li>
+            <li><a href="order-status.html">Your Order</a></li>
+            <li><a href="new-products.html">Whats New</a></li>
+            <li><a href="all-products.html">All Products</a></li>
+            <li><a href="favourite.html">Favourite</a></li>
+
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+
         </ul>
     </div>
     <div class="content">

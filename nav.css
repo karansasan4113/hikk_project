@@ -105,11 +105,12 @@ a {
     justify-content: space-between;
 }
 
-#call-us {
+#my-cart {
     padding: 20px;
     color: #ffffff;
     font-family: 'Verdana', sans-serif;
     text-decoration: none;
+    cursor: pointer;
 }
 
 #wishlist {
@@ -204,4 +205,216 @@ body.sidebar-active {
 
 #close-button:hover {
     color: #a1a1a1;
+}
+
+/*          */
+
+#right-sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    background-color: #fff;
+    right: 0;
+    /* Position it at the right side of the screen */
+    top: 0;
+    /* Position it at the top of the screen */
+    overflow-x: hidden;
+    transition: width 0.5s;
+    /* Only transition the width property */
+    z-index: 11;
+}
+
+/* #right-sidebar li {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 7vh;
+    padding-left: 8vh;
+    align-items: center;
+} */
+
+/* #right-sidebar a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+#right-sidebar a:hover {
+    color: #a1a1a1;
+} */
+
+.right-overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#right-sidebar.active {
+    width: 400px;
+}
+
+.right-overlay.active {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+body.right-sidebar-active {
+    overflow: hidden;
+}
+
+#right-close-button {
+
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: flex-end;
+    /* Align to the right */
+    align-items: center;
+    font-size: large;
+    padding-right: 7vh;
+}
+
+#right-close-button:hover {
+    color: #a1a1a1;
+}
+
+
+.product1 {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+/*   when the products are more than 3 make the checkout container sticky */
+#checkout-container {
+    height: 100px;
+    background-color: #ffffff;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    padding-top: 40px;
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+#checkout-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #000000;
+    color: #fff8f8;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+/*  */
+.cart-item {
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+
+
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    /* Add a border between cart items */
+}
+
+.product-image {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    /* Spacing between image and details */
+    padding-left: 20px;
+}
+
+.product-image img {
+    width: 100px;
+
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.price {
+    margin-top: 0;
+    margin-bottom: 10px;
+    /* Spacing between price and quantity controls */
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.quantity-controls button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: larger;
+
+}
+
+.quantity {
+    margin: 0 10px;
+    /* Spacing between decrease and increase buttons */
+}
+
+
+
+.small-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+
+.product-name-cost {
+    display: flex;
+    padding-bottom: 10px;
+
+}
+
+#product-name {
+    font-size: small;
+}
+
+#product-cost {
+    padding-left: 60px;
+    font-size: small;
+}
+
+.price-container {
+    padding-bottom: 10px;
+}
+
+#product-price {
+    font-size: small;
+}
+
+.add-delete-minus {
+    display: flex;
+
+}
+
+
+#checkout-container.sticky {
+    position: sticky;
+    bottom: 0;
 }

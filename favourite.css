@@ -159,7 +159,7 @@ body {
     display: flex;
     padding: 20px;
     margin-bottom: 80px;
-
+    flex-wrap: wrap;
 
 }
 
@@ -170,7 +170,8 @@ body {
 
 #home-page-products {
     padding: 20px;
-
+    width: 30%;
+    padding-bottom: 60px;
 }
 
 #home-page-products li {
@@ -216,6 +217,7 @@ body {
 
     width: 100%;
 }
+
 #home-page-fotter-items1 a {
     color: #ffffff;
     text-decoration: none;
